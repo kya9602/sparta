@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <!-- Webpage Title -->
+        <title>My portfolio</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bulma CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <!-- Font Awesome CSS -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+        <script>
+            //버튼 클릭해서 아이디 검색하면,
+            // 1. input box에서 id 값 가져오기
+            // 2. id가 DB에 있는지 확인하기.
+            // 2. url 맨 뒤에 아이디 붙여서 서버에 api 호출.
+            // 3. 아이디로 데이터 검색.
+            // 4. 템플렛 엔진으로 html 페이지에 채워넣기.
+            function search_id()
+            {
+                let word=$("#input_word").val();
+                console.log("입력 아이디 : "+ word);
+                window.location.href=`/${word}`;
+            }
+
+        </script>
+
+        <style>
+        .body {
+            width: 500px;
+            margin: auto;
+        }
+
+        .input-box {
+            background-size: 400px;
+            margin: 20px auto auto auto;
+            width: 300px;
+            display: block;
+        }
+        .is-dark {
+            margin-top: 20px;
+        }
+        </style>
+    </head>
+
+    <body>
+            <div class="body has-text-centered" style="padding:5rem 5rem 5rem 5rem; margin:auto;">
+            <h1 style="font-size: xx-large"  >MY PORTFOLIO</h1>
+                <div class="control input-box">
+                  <form id="myform">
+                    <input id="input_word" class="input" type="text" placeholder="아이디를 입력하세요.">
+                         <button onclick="search_id()" class="button is-dark")>Search</button>
+                  </form>
+                </div>
+            </div>
+    </body>
+</html>

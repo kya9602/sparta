@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        function test_func() {
+            console.log("test");
+            let word = $("#input_box").val();
+            console.log("입력 아이디 : " + word);
+            window.location.href = `/${word}`;
+            //window.location.href = `/personal`;
+        }
+    </script>
+
+</head>
+<body>
+<input id="input_box">
+<button id="bt1" onclick="test_func()">search</button>
+</body>
+</html>
