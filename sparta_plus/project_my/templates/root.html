@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <!-- Webpage Title -->
+        <title>My portfolio</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bulma CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <!-- Font Awesome CSS -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+        <script>
+            function myFunction() {
+                href = '/login';
+                location.href = href;
+        }
+        </script>
+
+        <style>
+        .body {
+            width: 500px;
+            margin: auto;
+        }
+
+        .input-box {
+            background-size: 400px;
+            margin: 20px auto auto auto;
+            width: 300px;
+            display: block;
+        }
+        .is-dark {
+            margin-top: 20px;
+        }
+        </style>
+    </head>
+    <body>
+            <div class="body has-text-centered" style="padding:5rem 5rem 5rem 5rem; margin:auto;">
+            <h1 style="font-size: xx-large"  >MY PORTFOLIO</h1>
+                <div class="control input-box">
+                  <form id="frm">
+                    <input id=root_input class="input" type="text" placeholder="아이디를 입력하세요.">
+                         <button onclick='myFunction()' class="button is-dark")>Search</button>
+                  </form>
+                </div>
+            </div>
+    </body>
+</html>
